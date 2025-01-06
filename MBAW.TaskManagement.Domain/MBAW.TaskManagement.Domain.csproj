@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MBAW.TaskManagement.Infrastructure\MBAW.TaskManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\MBAW.TaskManagement.Shared\MBAW.TaskManagement.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="StoredProcedures\create_tasks_table.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="StoredProcedures\usp_TaskManagement_GetHighPriorityCount.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="StoredProcedures\usp_TaskManagement_GetTaskById.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="StoredProcedures\usp_TaskManagement_InsertTask.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="StoredProcedures\usp_TaskManagement_UpdateTask.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

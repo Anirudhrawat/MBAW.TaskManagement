@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MBAW.TaskManagement.Application\MBAW.TaskManagement.Application.csproj" />
+    <ProjectReference Include="..\MBAW.TaskManagement.Domain\MBAW.TaskManagement.Domain.csproj" />
+    <ProjectReference Include="..\MBAW.TaskManagement.Infrastructure\MBAW.TaskManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\MBAW.TaskManagement.Mapping\MBAW.TaskManagement.Mapping.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Data" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MBAW.TaskManagement.Application\MBAW.TaskManagement.Application.csproj" />
+    <ProjectReference Include="..\MBAW.TaskManagement.Domain\MBAW.TaskManagement.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
